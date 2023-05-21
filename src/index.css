@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bg-dark{
+    color: #252525/80;
+}
+
+input[type="text"],input[type="email"],input[type="password"]{
+    @apply px-4 py-2 rounded-xl border w-full bg-transparent
+}
+
+button[type="submit"]{
+    @apply px-6 py-2 rounded-xl bg-indigo-700 text-white
+}
