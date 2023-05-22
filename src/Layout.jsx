@@ -1,25 +1,32 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import Sidebar from "./Components/Sidebar";
 import Navbar from "./Components/Navbar";
-import { Outlet } from "react-router";
-import {UserContext} from "./UserContext.jsx";
+import { Navigate, Outlet } from "react-router";
+import { UserContext } from "./UserContext.jsx";
 
 const Layout = () => {
-    const {
-        user,
-        ready,
-        setUser,
-        setReady,
-        darkMode,
-        setDarkMode,
-        changeBg,
-        changeMainBg,
-        BtnBg,
-    } = useContext(UserContext);
+  const {
+    user,
+    ready,
+    setUser,
+    setReady,
+    darkMode,
+    setDarkMode,
+    changeBg,
+    changeMainBg,
+    BtnBg,
+  } = useContext(UserContext);
+
+  if (user == null && ready) {
+    return <Navigate to={"/login"} />;
+  }
+
   return (
-    <div className={`flex w-screen gap-6 min-h-screen ${changeMainBg()}`}>
+    <div
+      className={`flex w-screen sm:gap-3 md:gap-6 h-screen z-20 sm:p-2 md:p-6 ${changeMainBg()}`}
+    >
       <Sidebar />
-      <div className={` flex flex-col gap-6 ${changeMainBg()}`}>
+      <div className={`w-full flex flex-col  sm:gap-3 md:gap-6`}>
         <Navbar />
         <Outlet />
       </div>

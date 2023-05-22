@@ -4,7 +4,7 @@ import { UilMoon, UilSun, UilUserCircle } from "@iconscout/react-unicons";
 import { Link } from "react-router-dom";
 
 const HomePage = () => {
-  const { darkMode, setDarkMode, changeBg, changeMainBg, BtnBg } =
+  const { user, darkMode, setDarkMode, changeBg, changeMainBg, BtnBg } =
     useContext(UserContext);
 
   const toggleDarkMode = () => {
@@ -28,7 +28,7 @@ const HomePage = () => {
               {darkMode ? <UilSun /> : <UilMoon />}
             </div>
             <Link
-              to={"/login"}
+              to={user ? "/user/dashboard" : "/login"}
               className={` p-2 rounded-full border cursor-pointer border-indigo-700 `}
             >
               <UilUserCircle />
@@ -38,9 +38,11 @@ const HomePage = () => {
         <main
           className={` w-full flex justify-center items-center shadow-2xl rounded-2xl min-h-[50vh] ${changeBg()}`}
         >
-          <Link to={"/login"} className={`font-semibold ${BtnBg()}`}>
-            {" "}
-            Login
+          <Link
+            to={user ? "/user/dashboard" : "/login"}
+            className={`font-semibold ${BtnBg()}`}
+          >
+            {user ? "Go to dashboard" : "Login"}
           </Link>
         </main>
       </div>
