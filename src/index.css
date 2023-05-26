@@ -14,6 +14,21 @@
 .dashboard::-webkit-scrollbar-thumb{
     @apply bg-white rounded-3xl
 }
+
+
+.complaints::-webkit-scrollbar{
+    @apply w-2
+}
+
+.complaints::-webkit-scrollbar-track{
+
+    @apply bg-transparent  rounded-3xl my-4
+}
+
+.complaints::-webkit-scrollbar-thumb{
+    @apply bg-white rounded-3xl
+}
+
 .rudramadevi{
 font-family: 'Yeseva One', cursive;
 
@@ -22,7 +37,7 @@ font-family: 'Yeseva One', cursive;
     color: #252525/80;
 }
 
-input[type="text"],input[type="email"],input[type="password"]{
+input[type="text"],input[type="email"],input[type="password"],textarea{
     @apply px-4 py-2 rounded-xl border w-full bg-transparent
 }
 

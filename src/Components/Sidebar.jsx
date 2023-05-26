@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { UserContext } from "../UserContext";
 import { UilMultiply } from "@iconscout/react-unicons";
 import SidebarComponent from "./SidebarComponent";
+import {Link} from "react-router-dom";
 
 const Sidebar = () => {
   const {
@@ -23,9 +24,9 @@ const Sidebar = () => {
         className={` w-max sm:hidden md:flex h-full rounded-2xl flex-col gap-12  backdrop-blur-sm p-4 p ${changeBg()} `}
       >
         <div className="font-semibold text-3xl">
-          <div className="text-center rudramadevi md:hidden xl:flex px-4">
+          <Link to={"/"} className="mt-2 text-center rudramadevi md:hidden xl:flex px-4">
             Rudramadevi
-          </div>
+          </Link>
         </div>
         <SidebarComponent />
       </div>
@@ -37,7 +38,7 @@ const Sidebar = () => {
         } `}
       >
         <div className="font-semibold text-2xl px-2 gap-10 mb-8 flex items-center justify-between">
-          <div className="px-4 py-2 text-center rudramadevi">Rudramadevi</div>
+          <Link to={"/"} className="px-4 py-2 text-center rudramadevi">Rudramadevi</Link>
           <div
             className=" p-1 border rounded-full cursor-pointer"
             onClick={showSideBar}
