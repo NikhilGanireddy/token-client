@@ -8,7 +8,7 @@
 
 .dashboard::-webkit-scrollbar-track{
 
-    @apply bg-transparent rounded-3xl my-4
+    @apply bg-transparent  rounded-3xl my-4
 }
 
 .dashboard::-webkit-scrollbar-thumb{
