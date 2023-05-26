@@ -9,8 +9,8 @@ import Layout from "./Layout.jsx";
 import Dashboard from "./Pages/Dashboard.jsx";
 
 const App = () => {
-  axios.defaults.baseURL = "http://localhost:4000";
-  // axios.defaults.baseURL = "https://token-server-721u.onrender.com";
+  // axios.defaults.baseURL = "http://localhost:4000";
+  axios.defaults.baseURL = "https://tokenserver.onrender.com";
 
   axios.defaults.withCredentials = true;
   return (
