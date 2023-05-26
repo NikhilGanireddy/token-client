@@ -26,7 +26,7 @@ const Layout = () => {
   if (!user) {
     return (
       <div className=" w-screen h-screen flex justify-center items-center">
-        <div className=" animate-spin ">
+        <div className=" animate-spin">
           <UilSun />
         </div>
       </div>
