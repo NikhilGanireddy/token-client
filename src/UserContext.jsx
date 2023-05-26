@@ -15,11 +15,14 @@ export function UserContextProvider({ children }) {
       axios.get("/profile").then(({ data }) => {
         setUser(data);
         // console.log(ready);
+        window.localStorage.setItem("loggedIn", JSON.stringify(data));
+        
         setReady(true);
         // console.log(ready);
       });
     }
   }, []);
+
   const changeMainBg = () => {
     if (darkMode == true) {
       return `bg-dark text-[#D8B9C3]`;
@@ -40,7 +43,7 @@ export function UserContextProvider({ children }) {
 
   const showSideBar = () => {
     showMenu(!menu);
-    console.log(menu);
+    // console.log(menu);
   };
 
   const BtnBg = () => {
@@ -56,14 +59,14 @@ export function UserContextProvider({ children }) {
     }
   };
 
-  const hoverBgChange=()=>{
+  const hoverBgChange = () => {
     if (darkMode == true) {
       return `hover:bg-[#D8B9C3] hover:text-gray-800`;
     }
     if (darkMode == false) {
       return `hover:bg-gray-800 hover:text-white`;
     }
-  }
+  };
 
   return (
     <UserContext.Provider

@@ -4,6 +4,8 @@ import Navbar from "./Components/Navbar";
 import { Navigate, Outlet } from "react-router";
 import { UserContext } from "./UserContext.jsx";
 
+import { UilMoon, UilSun, UilUserCircle } from "@iconscout/react-unicons";
+
 const Layout = () => {
   const {
     user,
@@ -19,6 +21,16 @@ const Layout = () => {
 
   if (user == null && ready) {
     return <Navigate to={"/login"} />;
+  }
+
+  if (!user) {
+    return (
+      <div className=" w-screen h-screen flex justify-center items-center">
+        <div className=" animate-spin ">
+          <UilSun />
+        </div>
+      </div>
+    );
   }
 
   return (

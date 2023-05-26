@@ -7,6 +7,15 @@ import LoginPage from "./Pages/LoginPage.jsx";
 import axios from "axios";
 import Layout from "./Layout.jsx";
 import Dashboard from "./Pages/Dashboard.jsx";
+import Attendance from "./Pages/Attendance.jsx";
+import Complaints from "./Pages/Complaints.jsx";
+import Feedback from "./Pages/Feedback.jsx";
+import Logout from "./Pages/Logout.jsx";
+import Ms from "./Pages/Ms.jsx";
+import Food from "./Pages/Food.jsx";
+
+import Profile from "./Pages/Profile.jsx";
+import Room from "./Pages/Room.jsx";
 
 const App = () => {
   // axios.defaults.baseURL = "http://localhost:4000";
@@ -21,6 +30,14 @@ const App = () => {
         <Route path={"/login"} element={<LoginPage />} />
         <Route path={"/user"} element={<Layout />}>
           <Route path={"/user/dashboard"} element={<Dashboard />} />
+          <Route path={"/user/attendance"} element={<Attendance />} />
+          <Route path={"/user/complaints"} element={<Complaints />} />
+          <Route path={"/user/feedback"} element={<Feedback />} />
+          <Route path={"/user/food"} element={<Food />} />
+          <Route path={"/user/logout"} element={<Logout />} />
+          <Route path={"/user/ms"} element={<Ms />} />
+          <Route path={"/user/profile"} element={<Profile />} />
+          <Route path={"/user/room"} element={<Room />} />
         </Route>
       </Routes>
     </UserContextProvider>
