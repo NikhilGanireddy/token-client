@@ -36,7 +36,7 @@ const Dashboard = () => {
                     <div
                         className={` p-4 sm:col-span-full md:col-span-3 rounded-2xl backdrop-blur-sm min-h-[350px]  ${changeBg()}`}
                     >
-                        <Profile/>
+                        Profile
                     </div>
                 </div>
             </div>
