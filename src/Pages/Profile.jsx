@@ -1,5 +1,6 @@
 import React, {useContext} from 'react'
 import {UserContext} from "../UserContext.jsx";
+import {Link} from "react-router-dom";
 
 const Profile = () => {
 
@@ -96,15 +97,16 @@ const Profile = () => {
             </div>
             <div className={` flex flex-col gap-2 justify-center`}>
                 <label className={` px-4`}>
-                    Attendance
+                    Complaints
                 </label>
-                <input disabled={true} type={"text"} placeholder={user.address}
+                <input disabled={true} type={"text"} placeholder={(user.complaints).length}
                        className={`cursor-not-allowed placeholder:capitalize border-gray-600`}/>
             </div>
 
         </div>
         <div className={` flex w-full sm:mt-6 md:mt-8 lg:mt-12 items-center justify-center `}>
-            <button type={"submit"}>Change Password</button>
+            <Link className={`px-6 py-2 rounded-xl bg-indigo-700 text-white`} to={"/user/profile/changePassword"}
+                  type={"submit"}>Change Password</Link>
         </div>
     </div>)
 }

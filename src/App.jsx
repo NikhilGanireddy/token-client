@@ -17,6 +17,7 @@ import Food from "./Pages/Food.jsx";
 import Profile from "./Pages/Profile.jsx";
 import Room from "./Pages/Room.jsx";
 import RegisterPage from "./Pages/RegisterPage.jsx";
+import ChangePassword from "./Pages/ChangePassword.jsx";
 
 const App = () => {
   // axios.defaults.baseURL = "http://localhost:4000";
@@ -40,6 +41,10 @@ const App = () => {
           <Route path={"/user/ms"} element={<Ms />} />
           <Route path={"/user/profile"} element={<Profile />} />
           <Route path={"/user/room"} element={<Room />} />
+          <Route
+            path={"/user/profile/changePassword"}
+            element={<ChangePassword />}
+          />
         </Route>
       </Routes>
     </UserContextProvider>

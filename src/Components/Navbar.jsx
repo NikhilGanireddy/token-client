@@ -30,7 +30,7 @@ const Navbar = () => {
       </div>
       <div className=" flex justify-center items-center gap-3 cursor-pointer">
         <div
-          className={` p-2 rounded-full border duration-200 transition-all ease-in-out ${hoverBgChange()}`}
+          className={` p-2 rounded-full border border-gray-600 duration-200 transition-all ease-in-out ${hoverBgChange()}`}
           onClick={toggleDarkMode}
         >
           {darkMode ? <UilSun /> : <UilMoon />}

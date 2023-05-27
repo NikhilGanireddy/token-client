@@ -53,7 +53,7 @@ const Complaints = () => {
                     </div>
                 </div>
                 <textarea
-                    className={` resize-y min-h-[200px] outline-none`}
+                    className={` resize-y min-h-[200px] outline-none border-gray-600`}
                     placeholder={"State your complaints"}
                     onChange={(e) => {
                         setComplaint(e.target.value);

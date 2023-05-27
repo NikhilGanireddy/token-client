@@ -50,7 +50,7 @@ font-family: 'Yeseva One', cursive;
 /*}*/
 
 input[type="text"],input[type="email"],input[type="password"],textarea{
-    @apply px-4 py-2 rounded-xl border w-full bg-transparent
+    @apply px-4 py-2 rounded-xl border w-full bg-transparent outline-none
 }
 
 button[type="submit"]{

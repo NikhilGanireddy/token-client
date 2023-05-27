@@ -22,14 +22,14 @@ const HomePage = () => {
           <h1 className={` text-2xl font-semibold`}>Rudramadevi</h1>
           <div className={` flex justify-between gap-2 items-center`}>
             <div
-              className={` p-2 rounded-full border cursor-pointer border-indigo-700 `}
+              className={` p-2 rounded-full border cursor-pointer border-gray-500 `}
               onClick={toggleDarkMode}
             >
               {darkMode ? <UilSun /> : <UilMoon />}
             </div>
             <Link
               to={user ? "/user/dashboard" : "/login"}
-              className={` p-2 rounded-full border cursor-pointer border-indigo-700 `}
+              className={` p-2 rounded-full border cursor-pointer  border-gray-500 `}
             >
               <UilUserCircle />
             </Link>
