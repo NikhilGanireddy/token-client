@@ -16,10 +16,11 @@ import Food from "./Pages/Food.jsx";
 
 import Profile from "./Pages/Profile.jsx";
 import Room from "./Pages/Room.jsx";
+import RegisterPage from "./Pages/RegisterPage.jsx";
 
 const App = () => {
-  // axios.defaults.baseURL = "http://localhost:4000";
-  axios.defaults.baseURL = "https://tokenserver.onrender.com";
+  axios.defaults.baseURL = "http://localhost:4000";
+  // axios.defaults.baseURL = "https://tokenserver.onrender.com";
   axios.defaults.withCredentials = true;
   return (
     <UserContextProvider>
@@ -27,6 +28,8 @@ const App = () => {
       <Routes>
         <Route index element={<HomePage />} />
         <Route path={"/login"} element={<LoginPage />} />
+        <Route path={"/register"} element={<RegisterPage />} />
+
         <Route path={"/user"} element={<Layout />}>
           <Route path={"/user/dashboard"} element={<Dashboard />} />
           <Route path={"/user/attendance"} element={<Attendance />} />
