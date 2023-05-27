@@ -49,7 +49,7 @@ const Complaints = () => {
                     </div>
                     <div className={`flex items-center gap-2`}>
                         <div>To:</div>
-                        <div className={` capitalize text-lg font-semibold`}>Archana Sir</div>
+                        <div className={` capitalize text-lg font-semibold`}>Archana Mam</div>
                     </div>
                 </div>
                 <textarea

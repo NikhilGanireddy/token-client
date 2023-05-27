@@ -27,7 +27,7 @@ const Layout = () => {
   if (!user) {
     return (
       <div
-        className={` w-screen h-screen ${changeBg()} flex justify-center items-center`}
+        className={` w-screen h-screen min-h-[590px] ${changeBg()} flex justify-center items-center`}
       >
         <div className="text-8xl animate-spin">
           <ImSpinner9 />
