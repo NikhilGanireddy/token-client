@@ -38,7 +38,7 @@ const Layout = () => {
 
   return (
     <div
-      className={`flex w-screen sm:gap-3 md:gap-6 h-screen z-20 sm:p-2 md:p-6 ${changeMainBg()}`}
+      className={`flex w-screen sm:gap-3 md:gap-6 h-screen z-20 sm:p-2 sm:pb-6 md:p-6 ${changeMainBg()}`}
     >
       <Sidebar />
       <div className={`w-full flex flex-col  sm:gap-3 md:gap-6`}>
