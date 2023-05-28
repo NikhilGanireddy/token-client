@@ -23,9 +23,9 @@ export function UserContextProvider({ children }) {
     }
   }, []);
 
-  const svgBg=()=>{
-    return
-  }
+  const svgBg = () => {
+    return;
+  };
 
   const changeMainBg = () => {
     if (darkMode == true) {
@@ -51,12 +51,12 @@ export function UserContextProvider({ children }) {
   };
 
   const BtnBg = () => {
-    return `bg-indigo-700 text-white px-6 py-2 rounded-xl`;
+    return `bg-white text-gray-900 px-6 py-2 rounded-xl`;
   };
 
   const changeBgMenu = () => {
     if (darkMode == true) {
-      return `bg-gray-900 text-[#D8B9C3]`;
+      return `bg-gray-900 text-white`;
     }
     if (darkMode == false) {
       return `bg-white text-gray-800`;
@@ -65,10 +65,10 @@ export function UserContextProvider({ children }) {
 
   const hoverBgChange = () => {
     if (darkMode == true) {
-      return `hover:bg-[#D8B9C3] hover:text-gray-800`;
+      return `hover:bg-white/20 hover:text-gray-800`;
     }
     if (darkMode == false) {
-      return `hover:bg-gray-800 hover:text-white`;
+      return `hover:bg-black/20 hover:text-white`;
     }
   };
 

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+ font-family: 'Rajdhani', sans-serif;
+}
+
 .dashboard::-webkit-scrollbar {
     @apply w-2
 }
@@ -44,10 +48,6 @@
     @apply bg-[#F36567] rounded-3xl
 }
 
-.rudramadevi {
-    font-family: 'Yeseva One', cursive;
-
-}
 
 /*.bg-dark{*/
 /*    color: #252525/80;*/
