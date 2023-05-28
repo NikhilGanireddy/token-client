@@ -28,7 +28,6 @@ body{
 
     @apply bg-[#C62368]  rounded-3xl my-48
 
-    @apply bg-transparent  rounded-3xl my-48
 }
 
 .complaints::-webkit-scrollbar-thumb{
