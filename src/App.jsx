@@ -20,8 +20,8 @@ import RegisterPage from "./Pages/RegisterPage.jsx";
 import ChangePassword from "./Pages/ChangePassword.jsx";
 
 const App = () => {
-  axios.defaults.baseURL = "http://localhost:4000";
-  // axios.defaults.baseURL = "https://tokenserver.onrender.com";
+  // axios.defaults.baseURL = "http://localhost:4000";
+  axios.defaults.baseURL = "https://tokenserver.onrender.com";
   axios.defaults.withCredentials = true;
   return (
     <UserContextProvider>
