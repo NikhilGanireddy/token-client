@@ -8,6 +8,7 @@ const Profile = () => {
         user, ready, setUser, setReady, darkMode, setDarkMode, changeBg, changeMainBg, BtnBg,
     } = useContext(UserContext);
 
+
     return (<div
         className={` profile overflow-y-scroll w-full h-full rounded-2xl  p-4 pb-12 backdrop-blur-sm flex flex-col lg:gap-0 ${changeBg()}`}>
         <div className={` flex relative justify-center items-center w-full min-h-[350px] `}>

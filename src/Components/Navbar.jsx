@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={` w-full p-4 rounded-2xl flex justify-between items-center bg-gray-800/90 backdrop-blur-sm ${changeBg()}`}
+      className={` w-full p-4 rounded-2xl flex justify-between items-center backdrop-blur-sm ${changeBg()}`}
     >
       <div className="sm:text-lg md:text-2xl font-semibold capitalize">
         Hello {user?.name}

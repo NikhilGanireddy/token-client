@@ -27,14 +27,15 @@ const ChangePassword = () => {
                 let successMsg;
                 const data = axios.post("/user/profile/changePassword", {
                     hallTicket, currentPassword, newPassword, confirmNewPassword
-                }).then(res=>toast.success(res.data.message))
-                setConfirmNewPassword("")
-                setCurrentPassword("")
-                setNewPassword("")
-                navigate("/")
-                setUser(null)
-                window.localStorage.removeItem("loggedIn")
-
+                }).then(res => {
+                    toast.success(res.data.message)
+                    setConfirmNewPassword("")
+                    setCurrentPassword("")
+                    setNewPassword("")
+                    setUser(null)
+                    window.localStorage.removeItem("loggedIn")
+                    navigate("/")
+                })
             } catch (e) {
                 console.log(e)
             }

@@ -16,28 +16,32 @@ export function UserContextProvider({ children }) {
         setUser(data);
         // console.log(ready);
         window.localStorage.setItem("loggedIn", JSON.stringify(data));
-        
+
         setReady(true);
         // console.log(ready);
       });
     }
   }, []);
 
+  const svgBg=()=>{
+    return
+  }
+
   const changeMainBg = () => {
     if (darkMode == true) {
-      return `bg-dark text-[#D8B9C3]`;
+      return `bg-dark text-gray-300`;
     }
     if (darkMode == false) {
-      return `bg-light text-gray-800`;
+      return `bg-light text-gray-900`;
     }
   };
 
   const changeBg = () => {
     if (darkMode == true) {
-      return `bg-gray-900/90 text-[#D8B9C3]`;
+      return `bg-white/10 text-gray-300`;
     }
     if (darkMode == false) {
-      return `bg-white/80 text-gray-800`;
+      return `bg-black/20 text-gray-900`;
     }
   };
 

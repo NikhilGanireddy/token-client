@@ -12,9 +12,12 @@ import Complaints from "./Complaints.jsx";
 import Feedback from "./Feedback.jsx";
 
 const Dashboard = () => {
+
     const {
         user, ready, setUser, setReady, darkMode, setDarkMode, changeBg, changeMainBg, BtnBg,
     } = useContext(UserContext);
+
+
 
     const [tempUser, setTempUser] = useState(null);
 
@@ -47,7 +50,7 @@ const Dashboard = () => {
                     <div
                         className={` p-4 sm:col-span-full md:col-span-6 rounded-2xl backdrop-blur-sm min-h-[350px]  ${changeBg()}`}
                     >
-                        <Room/>
+                        Room
                     </div>
                     <div className={` sm:col-span-full md:col-span-4`}>
                         <div

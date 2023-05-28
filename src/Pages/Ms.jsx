@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Ms = () => {
+
   return (
     <div>Ms</div>
   )

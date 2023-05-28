@@ -42,7 +42,7 @@ const Complaints = () => {
                 className={`w-full  flex flex-col justify-center items-center gap-4`}
                 onSubmit={sendComplaint}
             >
-                <div className={` flex justify-between items-center w-full px-4`}>
+                <div className={` flex sm:flex-col md:flex-row  justify-between items-center w-full px-4`}>
                     <div className={`flex items-center gap-2`}>
                         <div>From:</div>
                         <div className={ ` capitalize text-lg font-semibold`}>{user.name}</div>
