@@ -145,7 +145,7 @@ const Profile = () => {
         className={` flex w-full sm:mt-6 md:mt-8 lg:mt-12 items-center justify-center `}
       >
         <Link
-          className={`px-6 py-2 rounded-xl bg-indigo-700 text-white`}
+          className={`px-6 py-2 rounded-xl text-[#4F0DAA] font-semibold bg-white`}
           to={"/user/profile/changePassword"}
           type={"submit"}
         >

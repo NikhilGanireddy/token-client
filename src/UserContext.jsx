@@ -51,7 +51,7 @@ export function UserContextProvider({ children }) {
   };
 
   const BtnBg = () => {
-    return `text-[#4F0DAA] bg-white px-6 py-2 rounded-xl`;
+    return `text-[#4F0DAA] bg-white px-6 py-2 rounded-xl font-semibold`;
   };
 
   const changeBgMenu = () => {
