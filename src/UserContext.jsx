@@ -23,12 +23,16 @@ export function UserContextProvider({ children }) {
     }
   }, []);
 
+  const svgBg = () => {
+    return;
+  };
+
   const changeMainBg = () => {
     if (darkMode == true) {
       return `bg-dark text-white`;
     }
     if (darkMode == false) {
-      return `bg-light text-gray-800`;
+      return `bg-light text-gray-900`;
     }
   };
 

@@ -16,6 +16,7 @@ const RegisterPage = () => {
         BtnBg,
     } = useContext(UserContext);
 
+
     const [name, setName] = useState("");
     const [hallTicket, setHallTicket] = useState("");
     const [room, setRoom] = useState("");

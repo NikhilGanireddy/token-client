@@ -4,6 +4,7 @@ import { UilMoon, UilSun, UilUserCircle } from "@iconscout/react-unicons";
 import { Link } from "react-router-dom";
 
 const HomePage = () => {
+  document.title = "Rudramadevi";
   const { user, darkMode, setDarkMode, changeBg, changeMainBg, BtnBg } =
     useContext(UserContext);
 
@@ -17,7 +18,7 @@ const HomePage = () => {
     >
       <div className={`w-full min-h-[80vh] flex gap-12 flex-col`}>
         <nav
-          className={`backdrop-blur-sm flex w-full justify-between items-center sm:px-4 lg:px-12 py-4 rounded-2xl shadow-2xl ${changeBg()} `}
+          className={` flex w-full justify-between items-center sm:px-4 lg:px-12 py-4 rounded-2xl shadow-2xl ${changeBg()} `}
         >
           <h1 className={` text-3xl font-semibold`}>Rudramadevi</h1>
           <div className={` flex justify-between gap-2 items-center`}>
@@ -36,7 +37,7 @@ const HomePage = () => {
           </div>
         </nav>
         <main
-          className={` w-full backdrop-blur-sm h-full flex justify-center items-center shadow-2xl rounded-2xl min-h-[50vh] ${changeBg()}`}
+          className={` w-full flex justify-center items-center shadow-2xl rounded-2xl min-h-[50vh] ${changeBg()}`}
         >
           <Link
             to={user ? "/user/dashboard" : "/login"}

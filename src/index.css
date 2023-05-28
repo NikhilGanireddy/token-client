@@ -11,7 +11,7 @@ body{
     @apply w-2
 }
 
-.dashboard::-webkit-scrollbar-track{
+.dashboard::-webkit-scrollbar-track {
 
     @apply bg-transparent  rounded-3xl my-48
 }
@@ -24,7 +24,9 @@ body{
     @apply w-2
 }
 
-.complaints::-webkit-scrollbar-track{
+.complaints::-webkit-scrollbar-track {
+
+    @apply bg-[#C62368]  rounded-3xl my-48
 
     @apply bg-transparent  rounded-3xl my-48
 }
@@ -37,7 +39,7 @@ body{
     @apply w-2
 }
 
-.profile::-webkit-scrollbar-track{
+.profile::-webkit-scrollbar-track {
 
     @apply bg-transparent  rounded-3xl my-48
 }
@@ -50,11 +52,11 @@ body{
 
 
 
-input[type="text"],input[type="email"],input[type="password"],textarea{
+input[type="text"], input[type="email"], input[type="password"], textarea {
     @apply px-4 py-2 rounded-xl border w-full bg-transparent outline-none
 }
 
-button[type="submit"]{
+button[type="submit"] {
     @apply px-6 py-2 rounded-xl bg-indigo-700 text-white
 }
 

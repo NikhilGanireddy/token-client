@@ -23,7 +23,7 @@ const Sidebar = () => {
       <div
         className={` w-max sm:hidden md:flex h-full rounded-2xl flex-col gap-12  backdrop-blur-sm p-4 p ${changeBg()} `}
       >
-        <div className="font-semibold text-3xl">
+        <div className="font-semibold flex items-center justify-start text-3xl">
           <Link to={"/"} className="mt-2 text-center rudramadevi md:hidden xl:flex px-4">
             Rudramadevi
           </Link>
