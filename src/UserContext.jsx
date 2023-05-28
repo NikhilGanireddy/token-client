@@ -5,7 +5,7 @@ import React, { createContext, useEffect, useState } from "react";
 export const UserContext = createContext({});
 
 export function UserContextProvider({ children }) {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
   const [user, setUser] = useState(null);
   const [ready, setReady] = useState(null);
   const [menu, showMenu] = useState(false);
@@ -16,7 +16,7 @@ export function UserContextProvider({ children }) {
         setUser(data);
         // console.log(ready);
         window.localStorage.setItem("loggedIn", JSON.stringify(data));
-        
+
         setReady(true);
         // console.log(ready);
       });
@@ -25,7 +25,7 @@ export function UserContextProvider({ children }) {
 
   const changeMainBg = () => {
     if (darkMode == true) {
-      return `bg-dark text-[#D8B9C3]`;
+      return `bg-dark text-white`;
     }
     if (darkMode == false) {
       return `bg-light text-gray-800`;
@@ -34,10 +34,10 @@ export function UserContextProvider({ children }) {
 
   const changeBg = () => {
     if (darkMode == true) {
-      return `bg-gray-900/90 text-[#D8B9C3]`;
+      return `bg-white/10 text-white`;
     }
     if (darkMode == false) {
-      return `bg-white/80 text-gray-800`;
+      return `bg-black/20 text-black`;
     }
   };
 
@@ -47,12 +47,12 @@ export function UserContextProvider({ children }) {
   };
 
   const BtnBg = () => {
-    return `bg-indigo-700 text-white px-6 py-2 rounded-xl`;
+    return `text-[#4F0DAA] bg-white px-6 py-2 rounded-xl`;
   };
 
   const changeBgMenu = () => {
     if (darkMode == true) {
-      return `bg-gray-900 text-[#D8B9C3]`;
+      return `bg-gray-900 text-white`;
     }
     if (darkMode == false) {
       return `bg-white text-gray-800`;
@@ -61,10 +61,10 @@ export function UserContextProvider({ children }) {
 
   const hoverBgChange = () => {
     if (darkMode == true) {
-      return `hover:bg-[#D8B9C3] hover:text-gray-800`;
+      return `hover:bg-white hover:text-gray-800`;
     }
     if (darkMode == false) {
-      return `hover:bg-gray-800 hover:text-white`;
+      return `hover:bg-[#4F0DAA] hover:text-white`;
     }
   };
 

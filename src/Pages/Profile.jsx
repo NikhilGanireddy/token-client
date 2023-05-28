@@ -19,88 +19,88 @@ const Profile = () => {
         <div
             className={`grid sm:grid-cols-1 sm:gap-2 md:gap-3 lg:gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4`}>
             <div className={` flex flex-col gap-2 justify-center`}>
-                <label className={` px-4`}>
+                <label className={` font-semibold px-4`}>
                     Name
                 </label>
                 <input disabled={true} type={"text"} placeholder={user.name}
-                       className={`cursor-not-allowed placeholder:capitalize border-gray-600`}/>
+                       className={`cursor-not-allowed placeholder:text-gray-900 placeholder:capitalize border-gray-600`}/>
             </div>
             <div className={` flex flex-col gap-2 justify-center`}>
-                <label className={` px-4`}>
+                <label className={` font-semibold px-4`}>
                     Hall Ticket
                 </label>
                 <input disabled={true} type={"text"} placeholder={user.hallTicket}
-                       className={`cursor-not-allowed placeholder:capitalize border-gray-600`}/>
+                       className={`cursor-not-allowed placeholder:text-gray-900 placeholder:capitalize border-gray-600`}/>
             </div>
             <div className={` flex flex-col gap-2 justify-center`}>
-                <label className={` px-4`}>
+                <label className={` font-semibold px-4`}>
                     Branch
                 </label>
                 <input disabled={true} type={"text"} placeholder={user.branch}
-                       className={`cursor-not-allowed placeholder:capitalize border-gray-600`}/>
+                       className={`cursor-not-allowed placeholder:text-gray-900 placeholder:capitalize border-gray-600`}/>
             </div>
             <div className={` flex flex-col gap-2 justify-center`}>
-                <label className={` px-4`}>
+                <label className={` font-semibold px-4`}>
                     Year
                 </label>
                 <input disabled={true} type={"text"} placeholder={user.year}
-                       className={`cursor-not-allowed placeholder:capitalize border-gray-600`}/>
+                       className={`cursor-not-allowed placeholder:text-gray-900 placeholder:capitalize border-gray-600`}/>
             </div>
             <div className={` flex flex-col gap-2 justify-center`}>
-                <label className={` px-4`}>
+                <label className={`font-semibold  px-4`}>
                     Room
                 </label>
                 <input disabled={true} type={"text"} placeholder={user.room}
-                       className={`cursor-not-allowed placeholder:capitalize border-gray-600`}/>
+                       className={`cursor-not-allowed placeholder:text-gray-900 placeholder:capitalize border-gray-600`}/>
             </div>
             <div className={` flex flex-col gap-2 justify-center`}>
-                <label className={` px-4`}>
+                <label className={` font-semibold px-4`}>
                     Mother Name
                 </label>
                 <input disabled={true} type={"text"} placeholder={user.motherName}
-                       className={`cursor-not-allowed placeholder:capitalize border-gray-600`}/>
+                       className={`cursor-not-allowed placeholder:text-gray-900 placeholder:capitalize border-gray-600`}/>
             </div>
             <div className={` flex flex-col gap-2 justify-center`}>
-                <label className={` px-4`}>
+                <label className={` font-semibold px-4`}>
                     Mother Mobile
                 </label>
                 <input disabled={true} type={"text"} placeholder={user.motherMobile}
-                       className={`cursor-not-allowed placeholder:capitalize border-gray-600`}/>
+                       className={`cursor-not-allowed placeholder:text-gray-900 placeholder:capitalize border-gray-600`}/>
             </div>
             <div className={` flex flex-col gap-2 justify-center`}>
-                <label className={` px-4`}>
+                <label className={` font-semibold px-4`}>
                     Father Name
                 </label>
                 <input disabled={true} type={"text"} placeholder={user.fatherName}
-                       className={`cursor-not-allowed placeholder:capitalize border-gray-600`}/>
+                       className={`cursor-not-allowed placeholder:text-gray-900 placeholder:capitalize border-gray-600`}/>
             </div>
             <div className={` flex flex-col gap-2 justify-center`}>
-                <label className={` px-4`}>
+                <label className={` font-semibold px-4`}>
                     Father Mobile
                 </label>
                 <input disabled={true} type={"text"} placeholder={user.fatherMobile}
-                       className={`cursor-not-allowed placeholder:capitalize border-gray-600`}/>
+                       className={`cursor-not-allowed placeholder:text-gray-900 placeholder:capitalize border-gray-600`}/>
             </div>
             <div className={` flex flex-col gap-2 justify-center`}>
-                <label className={` px-4`}>
+                <label className={` font-semibold px-4`}>
                     Address
                 </label>
                 <input disabled={true} type={"text"} placeholder={user.address}
-                       className={`cursor-not-allowed placeholder:capitalize border-gray-600`}/>
+                       className={`cursor-not-allowed placeholder:text-gray-900 placeholder:capitalize border-gray-600`}/>
             </div>
             <div className={` flex flex-col gap-2 justify-center`}>
-                <label className={` px-4`}>
+                <label className={` font-semibold px-4`}>
                     Outings
                 </label>
                 <input disabled={true} type={"text"} placeholder={user.address}
-                       className={`cursor-not-allowed placeholder:capitalize border-gray-600`}/>
+                       className={`cursor-not-allowed placeholder:text-gray-900 placeholder:capitalize border-gray-600`}/>
             </div>
             <div className={` flex flex-col gap-2 justify-center`}>
-                <label className={` px-4`}>
+                <label className={` font-semibold px-4`}>
                     Complaints
                 </label>
                 <input disabled={true} type={"text"} placeholder={(user.complaints).length}
-                       className={`cursor-not-allowed placeholder:capitalize border-gray-600`}/>
+                       className={`cursor-not-allowed placeholder:text-gray-900 placeholder:capitalize border-gray-600`}/>
             </div>
 
         </div>
