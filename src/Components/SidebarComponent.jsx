@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { UserContext } from "../UserContext";
 import sidebarData from "../data/sidebarData";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 
 const SidebarComponent = () => {
   const {
@@ -24,6 +24,9 @@ const SidebarComponent = () => {
         return (
           <Link
             to={data.path}
+            onClick={() => {
+              showSideBar();
+            }}
             key={data.id}
             className={` py-2 rounded-xl md:pr-4 xl:pr-24 duration-200 transition-all ease-in-out pl-4 flex items-center gap-4 font-semibold ${hoverBgChange()} ${
               data.class

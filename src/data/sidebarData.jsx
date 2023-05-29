@@ -73,7 +73,7 @@ const sidebarData = [
     name: "Logout",
     icon: <UilSignout />,
     path: "/user/logout",
-    class: " absolute bottom-4 w-max",
+    class: " absolute bottom-4 min-w-max",
   },
 ];
 
