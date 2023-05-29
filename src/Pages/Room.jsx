@@ -43,6 +43,7 @@ const Room = () => {
         userRoom,
       });
       toast.success("Sent Succesfully");
+      setComplaint("")
     } catch (err) {
       console.log(err);
     }
