@@ -46,8 +46,10 @@ const LoginPage = () => {
       });
       toast.success("Logged in succesfully");
       setUser(data);
+
       // console.log(user);
       navigate("/user/dashboard");
+      location.reload();
     } catch (err) {
       toast.error("Some error");
     }
