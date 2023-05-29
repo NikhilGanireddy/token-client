@@ -43,7 +43,7 @@ const Room = () => {
         userRoom,
       });
       toast.success("Sent Succesfully");
-      setComplaint("")
+      setComplaint("");
     } catch (err) {
       console.log(err);
     }
@@ -121,7 +121,7 @@ const Room = () => {
         <div
           className={` lg:w-[60%] rounded-2xl backdrop-blur-sm sm:w-full flex flex-col gap-4 p-4 items-center justify-center  ${changeBg()}`}
         >
-          <h1 className="lg:text-3xl sm:text-2xl font-bold text-center">
+          <h1 className="lg font-bold text-center">
             Complaints/repairs regarding your room?
           </h1>
           <form className=" w-full max-w-[450px] rounded-2xl flex sm:flex-col lg:flex-row gap-4 justify-center items-center">
