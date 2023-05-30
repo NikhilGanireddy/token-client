@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import { UserContext } from "../UserContext.jsx";
 
-const Logout = () => {
+const UserLogout = () => {
   const navigate = useNavigate();
 
   const {
@@ -47,4 +47,4 @@ const Logout = () => {
   );
 };
 
-export default Logout;
+export default UserLogout;

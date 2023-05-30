@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { UserContext } from "../UserContext";
 import { UilApps, UilSun, UilMoon } from "@iconscout/react-unicons";
 
-const Navbar = () => {
+const UserNavbar = () => {
   const {
     user,
     ready,
@@ -46,4 +46,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default UserNavbar;

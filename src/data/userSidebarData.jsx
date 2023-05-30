@@ -10,7 +10,7 @@ import {
   UilSignout,
 } from "@iconscout/react-unicons";
 
-const sidebarData = [
+const userSidebarData = [
   {
     id: 1,
     name: "Dashboard",
@@ -77,4 +77,4 @@ const sidebarData = [
   },
 ];
 
-export default sidebarData;
+export default userSidebarData;

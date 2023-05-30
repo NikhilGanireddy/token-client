@@ -29,7 +29,7 @@ const HomePage = () => {
               {darkMode ? <UilSun /> : <UilMoon />}
             </div>
             <Link
-              to={user ? "/user/dashboard" : "/login"}
+              to={user ? `/${user.profile}/dashboard` : "/login"}
               className={` p-2 rounded-full border cursor-pointer  border-gray-500 `}
             >
               <UilUserCircle />
@@ -40,7 +40,7 @@ const HomePage = () => {
           className={` w-full h-full flex justify-center backdrop-blur-sm items-center shadow-2xl rounded-2xl min-h-[50vh] ${changeBg()}`}
         >
           <Link
-            to={user ? "/user/dashboard" : "/login"}
+            to={user ? `/${user.profile}/dashboard` : "/login"}
             className={`font-semibold ${BtnBg()}`}
           >
             {user ? "Go to dashboard" : "Login"}

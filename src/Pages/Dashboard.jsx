@@ -2,7 +2,7 @@ import React, {useContext, useState} from "react";
 import {Navigate} from "react-router-dom";
 import {UserContext} from "../UserContext";
 import axios from "axios";
-import SidebarComponent from "../Components/SidebarComponent";
+import UserSidebarComponent from "../Components/UserSidebarComponent.jsx";
 import Attendance from "./Attendance.jsx";
 import Food from "./Food.jsx";
 import Profile from "./Profile.jsx";

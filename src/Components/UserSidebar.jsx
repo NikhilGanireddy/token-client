@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { UserContext } from "../UserContext";
 import { UilMultiply } from "@iconscout/react-unicons";
-import SidebarComponent from "./SidebarComponent";
+import UserSidebarComponent from "./UserSidebarComponent.jsx";
 import {Link} from "react-router-dom";
 
-const Sidebar = () => {
+const UserSidebar = () => {
   const {
     user,
     darkMode,
@@ -28,7 +28,7 @@ const Sidebar = () => {
             Rudramadevi
           </Link>
         </div>
-        <SidebarComponent />
+        <UserSidebarComponent />
       </div>
       <div
         className={`${
@@ -59,10 +59,10 @@ const Sidebar = () => {
             </svg>
           </div>
         </div>
-        <SidebarComponent />
+        <UserSidebarComponent />
       </div>
     </div>
   );
 };
 
-export default Sidebar;
+export default UserSidebar;

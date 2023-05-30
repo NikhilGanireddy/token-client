@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import { UserContext } from "../UserContext";
-import sidebarData from "../data/sidebarData";
+import userSidebarData from "../data/userSidebarData.jsx";
 import { Link, Navigate } from "react-router-dom";
 
-const SidebarComponent = () => {
+const UserSidebarComponent = () => {
   const {
     user,
     ready,
@@ -20,7 +20,7 @@ const SidebarComponent = () => {
 
   return (
     <div className=" flex flex-col w-full h-full gap-2">
-      {sidebarData.map((data) => {
+      {userSidebarData.map((data) => {
         return (
           <Link
             to={data.path}
@@ -41,4 +41,4 @@ const SidebarComponent = () => {
   );
 };
 
-export default SidebarComponent;
+export default UserSidebarComponent;

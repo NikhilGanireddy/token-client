@@ -27,6 +27,10 @@ const LoginPage = () => {
     setDarkMode(!darkMode);
   };
 
+  // if (user) {
+  //   navigate("/");
+  // }
+
   const loginUser = async (ev) => {
     ev.preventDefault();
     if (!name || !hallTicket || !room || !password) {
@@ -44,16 +48,29 @@ const LoginPage = () => {
         room,
         password,
       });
-      toast.success("Logged in succesfully");
       setUser(data);
 
-      // console.log(user);
-      navigate("/user/dashboard");
+      let userType;
+
+      if (user.profile == "admin") {
+        userType = "admin";
+      }
+
+      if (user.profile == "user") {
+        userType = "user";
+      }
+      toast.success("Logged in succesfully");
+      navigate(`/${userType}/dashboard`);
       location.reload();
-    } catch (err) {
-      toast.error("Some error");
-    }
+    } catch (err) {}
   };
+
+  // const checkboxChecked = () => {
+  //   let checkBox = document.getElementById("checkBox");
+  //   if (checkBox.checked == true) {
+  //     loginUser;
+  //   } else toast.error("Please check the checkox");
+  // };
 
   return (
     <div
@@ -79,10 +96,7 @@ const LoginPage = () => {
           className={` sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 sm:mt-0 lg:mt-32  flex flex-col p-12 gap-6 justify-center items-center shadow-2xl rounded-2xl min-h-[50vh] ${changeBg()}`}
         >
           <h1 className={` text-2xl font-semibold`}> Login</h1>
-          <form
-            className=" w-full h-max sm:py-4 lg:py-12   rounded-2xl flex flex-col justify-center items-center gap-3"
-            onSubmit={loginUser}
-          >
+          <form className=" w-full h-max sm:py-4 lg:py-12   rounded-2xl flex flex-col justify-center items-center gap-3">
             <input
               className=""
               type="text"
@@ -119,7 +133,22 @@ const LoginPage = () => {
                 setPassword(ev.target.value);
               }}
             />
-            <button type="submit">Login</button>
+
+            <div
+              id="verifier"
+              onClick={(ev) => {
+                ev.preventDefault();
+                loginUser(ev);
+                const selected = document.getElementById("verifier");
+                selected.classList.add("hidden");
+              }}
+              className={`w-full text-center text-lg capitalize cursor-pointer text-white p-3 rounded-2xl backdrop-blur-sm ${changeBg()}`}
+            >
+              Click me before logging in
+            </div>
+            <button onClick={loginUser} type="submit">
+              Login
+            </button>
           </form>
         </main>
       </div>
