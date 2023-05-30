@@ -36,7 +36,24 @@ const StudentsListMap = () => {
           </div>
         );
       })}
-      
+      {studentsList.map((user) => {
+        return (
+          <div
+            className={` w-full rounded-2xl grid backdrop-blur-sm  grid-cols-3 px-4 py-3 ${changeBg()}`}
+            key={user._id}
+          >
+            <div className={`text-lg font-semibold capitalize`}>
+              {user.name}
+            </div>
+            <div className={`text-lg text-center font-semibold capitalize`}>
+              {user.hallTicket}
+            </div>
+            <div className={`text-lg text-right font-semibold uppercase`}>
+              {user.branch}
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 };

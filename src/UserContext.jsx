@@ -71,6 +71,14 @@ export function UserContextProvider({ children }) {
       return `hover:bg-[#4F0DAA] hover:text-white`;
     }
   };
+  const hoverTextChange = () => {
+    if (darkMode == false) {
+      return `hover:text-white `;
+    }
+    if (darkMode == true) {
+      return `hover:text-gray-500 `;
+    }
+  };
 
   return (
     <UserContext.Provider
@@ -87,6 +95,7 @@ export function UserContextProvider({ children }) {
         BtnBg,
         changeBgMenu,
         hoverBgChange,
+        hoverTextChange,
       }}
     >
       {children}
