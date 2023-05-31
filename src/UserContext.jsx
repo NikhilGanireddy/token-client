@@ -8,7 +8,7 @@ export function UserContextProvider({ children }) {
   const [darkMode, setDarkMode] = useState(false);
   const [user, setUser] = useState(null);
   const [ready, setReady] = useState(null);
-  const [menu, showMenu] = useState(false);
+  const [menu, showMenu] = useState(true);
 
   useEffect(() => {
     if (!user) {

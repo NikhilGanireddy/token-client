@@ -22,9 +22,8 @@ const NewUser_TotalStudents = () => {
     <div
       className={` backdrop-blur-sm px-4 py-6 gap-4 rounded-2xl w-full flex flex-col justify-center items-center ${changeBg()}`}
     >
-    
       <Link
-        to={"./admin/createStudent"}
+        to={"/admin/createStudent"}
         className={`text-3xl cursor-pointer p-3 rounded-full ${changeBg()} ${hoverTextChange()} `}
       >
         <RiUserAddFill />

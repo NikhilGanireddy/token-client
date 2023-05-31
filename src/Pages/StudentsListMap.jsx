@@ -16,6 +16,8 @@ const StudentsListMap = () => {
 
   const studentsList = user.studentsList;
 
+
+
   return (
     <div className=" w-full h-full flex flex-col items-center gap-2 ">
       {studentsList.map((user) => {

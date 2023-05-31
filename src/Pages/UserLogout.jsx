@@ -25,7 +25,7 @@ const UserLogout = () => {
       className={` w-full h-full flex flex-col p-6 justify-center gap-12 items-center rounded-2xl backdrop-blur-sm ${changeBg()}`}
     >
       {user.profile == "admin" && (
-        <div className=" text-2xl font-semibold text-center">
+        <div className=" text-4xl font-extrabold text-center">
           Sorry, You are not authorised to view this page
         </div>
       )}
@@ -42,6 +42,12 @@ const UserLogout = () => {
         <button type="submit" onClick={logOut}>
           Logout
         </button>
+        <Link
+          className=" bg-white text-[#4F0DAA] px-6 py-2 rounded-xl font-semibold"
+          to={"/"}
+        >
+          Go to HomePage
+        </Link>
       </div>
     </div>
   );

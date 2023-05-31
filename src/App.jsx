@@ -22,6 +22,8 @@ import AdminLayout from "./AdminLayout.jsx";
 import AdminDashboard from "./Pages/AdminDashboard.jsx";
 import AdminLogout from "./Pages/AdminLogout.jsx";
 import Students from "./Pages/Students.jsx";
+import CreateStudent from "./Pages/CreateStudent";
+import ErrorPage from "./Pages/ErrorPage";
 
 const App = () => {
   // axios.defaults.baseURL = "http://localhost:4000";
@@ -31,6 +33,7 @@ const App = () => {
     <UserContextProvider>
       <Toaster position="top-center" toastOptions={{ duration: 5000 }} />
       <Routes>
+        <Route path="*" element={<ErrorPage />} />
         <Route index element={<HomePage />} />
         <Route path={"/login"} element={<LoginPage />} />
         <Route path={"/register"} element={<RegisterPage />} />
@@ -52,6 +55,7 @@ const App = () => {
         <Route path={"/admin"} element={<AdminLayout />}>
           <Route path={"/admin/dashboard"} element={<AdminDashboard />} />
           <Route path={"/admin/students"} element={<Students />} />
+          <Route path={"/admin/createStudent"} element={<CreateStudent />} />
 
           <Route path={"/admin/logout"} element={<AdminLogout />} />
         </Route>

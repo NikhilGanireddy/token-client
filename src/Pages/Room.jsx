@@ -51,7 +51,7 @@ const Room = () => {
 
   return (
     <div
-      className={`room w-full h-full flex flex-col overflow-y-scroll gap-4  items-center rounded-2xl`}
+      className={`scrollbar w-full h-full flex flex-col overflow-y-scroll gap-4  items-center rounded-2xl`}
     >
       <h1 className="sm:text-center lg:text-left w-full font-semibold text-2xl px-4">
         {user.room}
@@ -68,7 +68,7 @@ const Room = () => {
           </div>
         </div>
         <div
-          className={`roomMates sm:w-full lg:w-2/5 flex flex-col justify-start scroll-smooth items-center rounded-2xl lg:max-h-[500px] overflow-y-scroll backdrop-blur-sm p-4 gap-4  ${changeBg()}`}
+          className={`scrollbar sm:w-full lg:w-2/5 flex flex-col justify-start scroll-smooth items-center rounded-2xl lg:max-h-[500px] overflow-y-scroll backdrop-blur-sm p-4 gap-4  ${changeBg()}`}
         >
           <h1 className="text-xl font-semibold my-4">Room Mates</h1>
           <RoomMembers />

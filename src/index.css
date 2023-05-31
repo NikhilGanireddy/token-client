@@ -7,75 +7,18 @@ body{
     font-family: 'Rajdhani', sans-serif;
 }
 
-.dashboard::-webkit-scrollbar{
+.scrollbar::-webkit-scrollbar{
     @apply w-2
 }
 
-.dashboard::-webkit-scrollbar-track {
+.scrollbar::-webkit-scrollbar-track {
 
     @apply bg-transparent  rounded-3xl my-48
 }
 
-.dashboard::-webkit-scrollbar-thumb{
+.scrollbar::-webkit-scrollbar-thumb{
     @apply bg-gradient-to-b from-white to-[#4F0DAA] rounded-3xl
 }
-
-.complaints::-webkit-scrollbar{
-    @apply w-2
-}
-
-.complaints::-webkit-scrollbar-track {
-
-    @apply bg-transparent  rounded-3xl my-48
-
-}
-
-.complaints::-webkit-scrollbar-thumb{
-    @apply bg-gradient-to-b from-white to-[#4F0DAA] rounded-3xl
-}
-
-.profile::-webkit-scrollbar{
-    @apply w-2
-}
-
-.profile::-webkit-scrollbar-track {
-
-    @apply bg-transparent  rounded-3xl my-48
-}
-
-.profile::-webkit-scrollbar-thumb{
-    @apply bg-gradient-to-b from-white to-[#4F0DAA] rounded-3xl
-}
-
-.room::-webkit-scrollbar{
-    @apply w-2
-}
-
-.room::-webkit-scrollbar-track {
-
-    @apply bg-transparent  rounded-3xl my-56  
-}
-
-.room::-webkit-scrollbar-thumb{
-    @apply bg-gradient-to-b from-white to-[#4F0DAA] rounded-3xl
-}
-
-.roomMates::-webkit-scrollbar{
-    @apply w-2
-}
-
-.roomMates::-webkit-scrollbar-track {
-
-    @apply bg-transparent  rounded-3xl my-48
-}
-
-.roomMates::-webkit-scrollbar-thumb{
-    @apply bg-gradient-to-b from-white to-[#4F0DAA] rounded-3xl
-}
-
-
-
-
 
 input[type="text"], input[type="email"], input[type="password"], textarea {
     @apply px-4 py-2 rounded-xl border w-full bg-transparent outline-none placeholder:text-gray-900 border-gray-600

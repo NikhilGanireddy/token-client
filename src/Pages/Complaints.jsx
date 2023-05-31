@@ -46,7 +46,7 @@ const Complaints = () => {
 
   return (
     <div
-      className={`complaints w-full h-full rounded-2xl backdrop-blur-sm flex p-4 justify-center overflow-y-scroll items-center ${changeBg()} `}
+      className={`scrollbar w-full h-full rounded-2xl backdrop-blur-sm flex p-4 justify-center overflow-y-scroll items-center ${changeBg()} `}
     >
       <div
         className={` w-full max-w-[450px]  flex flex-col justify-center gap-8 items-center rounded-2xl p-4`}
