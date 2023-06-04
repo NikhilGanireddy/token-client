@@ -1,10 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Ms = () => {
+  return <div>Ms</div>;
+};
 
-  return (
-    <div>Ms</div>
-  )
-}
-
-export default Ms
+export default Ms;

@@ -20,10 +20,14 @@ const ErrorPage = () => {
       <div
         className={` w-full h-full flex flex-col p-6 text-center justify-center gap-12 items-center rounded-2xl backdrop-blur-sm ${changeBg()}`}
       >
-        <div className=" flex flex-col justify-center items-center gap-3">
-          <h1 className="capitalize text-8xl font-extrabold">Oops</h1>
-          <h1 className="capitalize text-4xl font-semibold">Something went wrong</h1>
-          <h1 className="capitalize text-lg font-semibold">Error 404 Page not found</h1>
+        <div className="flex flex-col items-center justify-center gap-3 ">
+          <h1 className="font-extrabold capitalize text-8xl">Oops</h1>
+          <h1 className="text-4xl font-semibold capitalize">
+            Something went wrong
+          </h1>
+          <h1 className="text-lg font-semibold capitalize">
+            Error 404 Page not found
+          </h1>
         </div>
 
         <Link
