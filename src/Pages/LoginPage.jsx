@@ -61,7 +61,7 @@ const LoginPage = () => {
       }
       toast.success("Logged in succesfully");
       navigate(`/${userType}/dashboard`);
-      location.reload();
+      // location.reload();
     } catch (err) {}
   };
 
@@ -96,7 +96,7 @@ const LoginPage = () => {
           className={` sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4 sm:mt-0 lg:mt-32  backdrop-blur-sm flex flex-col p-12 gap-6 justify-center items-center shadow-2xl rounded-2xl min-h-[50vh] ${changeBg()}`}
         >
           <h1 className={` text-2xl font-semibold`}> Login</h1>
-          <form className="flex flex-col items-center justify-center w-full gap-3  h-max sm:py-4 lg:py-12 rounded-2xl">
+          <form className="flex flex-col items-center justify-center w-full gap-3 h-max sm:py-4 lg:py-12 rounded-2xl">
             <input
               className=""
               type="text"

@@ -15,7 +15,7 @@ export function UserContextProvider({ children }) {
       axios.get("/profile").then(({ data }) => {
         setUser(data);
         // console.log(ready);
-        window.localStorage.setItem("loggedIn", JSON.stringify(data));
+        // window.localStorage.setItem("loggedIn", JSON.stringify(data));
 
         setReady(true);
         // console.log(ready);
